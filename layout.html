@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      font-size: 18px;
+      background-color: #ecf0f1;
+      color: #34495e;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      margin: 30px auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      margin-bottom: 15px;
+    }
+
+    nav {
+      background-color: #3498db;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav a:hover, nav a.active {
+      background-color: #2980b9;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+
+    article, aside {
+      padding: 0 10px;
+    }
+
+    article {
+      width: 75%;
+    }
+    article h2, article p {
+      margin-bottom: 10px;
+    }
+
+    aside {
+      width: 25%;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      article, aside {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <h1>Narakode</h1>
+      <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Praesentium, aspernatur impedit vel neque sint, ad quae ratione nulla consequuntur eius eum, quas? Quos nulla doloribus ab repellat saepe dicta praesentium.</p>
+    </header>
+
+    <nav>
+      <a href="" class="active">Beranda</a>
+      <a href="">Tentang Kami</a>
+      <a href="">Hubungi Kami</a>
+    </nav>
+
+    <main>
+
+      <article>
+        <div class="content">
+          <h2>Belajar Layout</h2>
+          <p>
+            Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Earum quae est neque voluptatum illo asperiores ratione nisi a deleniti tempora recusandae ipsum totam, facilis numquam similique aliquam sed ut, id.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Earum quae est neque voluptatum illo asperiores ratione nisi a deleniti tempora recusandae ipsum totam, facilis numquam similique aliquam sed ut, id.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Earum quae est neque voluptatum illo asperiores ratione nisi a deleniti tempora recusandae ipsum totam, facilis numquam similique aliquam sed ut, id.
+          </p>
+        </div>
+      </article>
+      
+      <aside>
+        <div class="content">
+          <h3>Sidebar</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing, elit.
+          </p>
+        </div>
+        <div class="content">
+          <h3>Menu</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing, elit.
+          </p>
+        </div>
+      </aside>
+
+    </main>
+
+    <footer class="content">
+      Narakode - &copy; 2021
+    </footer>
+  </div>
+
+</body>
+</html>
